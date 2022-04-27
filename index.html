@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" async></script>
+    <title>SUPERMARCHÉ</title>
+  </head>
+  <body>
+    <h1 id="headtitle">SUPERMARCHÉ Akram TAIYB</h1>
+    <div id="shelf">
+      <h3>Choisissez votre panier 🛒</h3>
+      <br />
+      <div class="item">
+        <img
+          src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHgxMTU5NDE5LWltYWdlLWpvYjYyMV8yLnBuZw.png?s=fHL5gCA6LIvkQL3e_Z7IjFqj4mSEDJlZWNYSfKuscuY"
+          alt="Orange"
+        />
+        <div class="description">
+          <h5>Oranges</h5>
+          <span class="price"><span class="digitalprice">12</span>DH /Kg</span>
+          <p id="lorem">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quia
+            ipsam consectetur distinctio delectus, dolorem repellendus tempore
+            repellat quae illo iusto labore. Dicta esse, quae ipsam minus
+            delectus inventore magni!
+          </p>
+        </div>
+        <div class="interactive">
+          <input class="ajouter" type="button" value="AJOUTER" />
+        </div>
+      </div>
+      <div class="item">
+        <img
+          src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvZnJzdHJhd2JlcnJ5X3JlZF9kZWxpY2lvdXNfc3dlZXQtaW1hZ2Utam9iNjIxXzEucG5n.png?s=O9rD3r9TPQwp8sYi44WZzEuB-t4HG6qQ80CuIYrCZ4A"
+          alt="Fraise"
+        />
+        <div class="description">
+          <h5>Fraise</h5>
+          <span class="price"><span class="digitalprice">15</span>DH /Kg</span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quia
+            ipsam consectetur distinctio delectus, dolorem repellendus tempore
+            repellat quae illo iusto labore. Dicta esse, quae ipsam minus
+            delectus inventore magni!
+          </p>
+        </div>
+        <div class="interactive">
+          <input class="ajouter" type="button" value="AJOUTER" />
+        </div>
+      </div>
+      <div class="item">
+        <img
+          src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcHUyMzM0MTgzLWltYWdlLWpvYjYyMV82LnBuZw.png?s=KPUOP-X07CEV5yiRL9WSTgJfztsPCjWNO1_zi63bLx0"
+          alt="Cerises"
+        />
+        <div class="description">
+          <h5>Cerises</h5>
+          <span class="price"><span class="digitalprice">20</span>DH /Kg</span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quia
+            ipsam consectetur distinctio delectus, dolorem repellendus tempore
+            repellat quae illo iusto labore. Dicta esse, quae ipsam minus
+            delectus inventore magni!
+          </p>
+        </div>
+        <div class="interactive">
+          <input class="ajouter" type="button" value="AJOUTER" />
+        </div>
+      </div>
+      <div class="item">
+        <img
+          src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcHUyMzM0MTg4LWltYWdlLWpvYjYyMV8xLnBuZw.png?s=mDr8PsuIWI8MDCvFSMLi8QOyLoRvyzJRAhdsnCUm_s0"
+          alt="Cerises"
+        />
+        <div class="description">
+          <h5>Citron</h5>
+          <span class="price"><span class="digitalprice">8</span>DH /Kg</span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quia
+            ipsam consectetur distinctio delectus, dolorem repellendus tempore
+            repellat quae illo iusto labore. Dicta esse, quae ipsam minus
+            delectus inventore magni!
+          </p>
+        </div>
+        <div class="interactive">
+          <input class="ajouter" type="button" value="AJOUTER" />
+        </div>
+      </div>
+    </div>
+    <div id="panier">
+      <b>LISTE PANIER</b>
+      <span id="totalNbr">0</span>
+      <table id="listpanier">
+        <thead>
+          <tr>
+            <th>OBJET</th>
+            <th>PRIX UTTC</th>
+            <th>QUANTITÉ /KG</th>
+          </tr>
+        </thead>
+        <tbody id="objet"></tbody>
+      </table>
+      <div id="topay">
+        <i id="here">Total :</i><br /><span id="prixtopay">0</span> MAD
+      </div>
+    </div>
+    <input
+      id="intolist"
+      type="button"
+      value="Imprimer Commande"
+      onclick="printPDF()"
+      disabled
+    />
+  </body>
+</html>

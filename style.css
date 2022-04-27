@@ -1,0 +1,170 @@
+body {
+  text-align: center;
+  font-family: Helvetica;
+  background-image: url(/supermarché/image-from-rawpixel-id-3916873-jpeg.jpg);
+  background-size: 20%;
+  background-repeat: repeat;
+}
+
+.shelf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 260px;
+  height: 260px;
+}
+
+.item {
+  color: #fff;
+  background: #2d2d2d;
+  padding: 12px;
+  padding-bottom: 25px;
+  margin: 4px 2px;
+  display: inline-block;
+  transition: 0.5s ease;
+}
+
+.item:hover {
+  color: #2d2d2d;
+  background: #e7e6e6;
+}
+
+.description {
+  width: 260px;
+}
+
+h5 {
+  font-size: 28px;
+}
+
+.price {
+  width: max-content;
+  padding: 10px;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  color: #2d2d2d;
+  border: none;
+  border-radius: 80px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#panier {
+  margin-top: 50px;
+  list-style: none;
+  background-color: #2d2d2d;
+  color: #fff;
+  width: max-content;
+  padding: 20px 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#intolist {
+  padding: 10px 20px;
+  background-color: #2d2d2d;
+  border: none;
+  margin: 20px;
+  border-radius: 80px;
+  color: #fff;
+  transition: 0.5s ease;
+  font-size: 18px;
+}
+
+#intolist:hover {
+  background-color: #15aa01;
+}
+
+#intolist:disabled {
+  background-color: #a1a1a1;
+  color: #c4c3c3;
+}
+
+#totalNbr {
+  padding: 6px 10px;
+  border-radius: 80px;
+  background-color: #e07006;
+  margin-left: 20px;
+}
+
+input[type="button"] {
+  padding: 5px 10px;
+  border-radius: 80px;
+  background-color: #fff;
+  border: none;
+  font-weight: bolder;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.item:hover input[type="button"] {
+  background-color: #389c2b;
+  color: #fff;
+}
+
+.item:hover .price {
+  box-shadow: 3px 3px 3px #2d2d2d2d;
+}
+
+.priceperunit {
+  font-size: 25px;
+}
+
+table {
+  display: block;
+  color: #2d2d2d;
+  background-color: #ffffff;
+  margin: 20px;
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+table thead tr th {
+  width: 180px;
+  text-decoration: underline #e7e6e6 4px;
+  text-underline-offset: 5px;
+}
+
+.quantite {
+  width: 50px;
+  height: max-content;
+}
+
+#topay {
+  text-align: right;
+  padding: 0 40px;
+}
+
+#here {
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  background: none;
+  border: none;
+  color: #2d2d2d;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+  width: 35px;
+  font-family: Helvetica;
+}
+
+input[type="number"]:focus {
+  background-color: #fff;
+  color: #2d2d2d;
+  outline: none;
+  border: none;
+}
+
+td {
+  padding: 6px 0;
+}
