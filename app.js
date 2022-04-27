@@ -1,5 +1,5 @@
 var addItemButtons = document.getElementsByClassName("ajouter");
-// var sommeI = 0;
+
 var listprix = [];
 var once = true;
 
